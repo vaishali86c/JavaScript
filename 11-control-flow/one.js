@@ -6,9 +6,8 @@ if (2 == "2") {
 
 
 // cant't run
-if ( 2 ==="2") {
+if ( 2 === "2") {
     console.log("it is not same because its datatypes is not same");
-
 }
 
 // if 
