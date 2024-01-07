@@ -10,14 +10,6 @@ function wait(n) {
     return promises;
 }
 
-// wait(3) 
-//     .then((message) => {
-//         console.log(message);
-//     })   
-
-//     .catch((error) => {
-//         console.error("error : ", error);
-//     })
 
 
 module.exports = wait;
