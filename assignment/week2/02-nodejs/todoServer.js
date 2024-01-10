@@ -45,18 +45,5 @@
   
   const app = express();
   
-  app.use(bodyParser.json());
-
-  // 1.
-
-  app.get("/todos", function(req, res) {
-    fs.readFile("/todos.json", "utf-8", function(err, data) {
-      if (err) {
-        throw err;
-      } else {
-        res.status(200).json(JSON.parse(data));
-      }
-    })
-  })
-  
+ 
   module.exports = app;

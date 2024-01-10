@@ -1,0 +1,47 @@
+<!-- how fetch api work -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- define a function -->
+
+    <div id="container"></div>
+    <script>
+        // fisrt way - promises
+        function getAnimalData() {
+            fetch("https://fakerapi.it/api/v1/persons?_quantity=1&_gender=male&_birthday_start=2005-01-01")
+                .then(function(response) {
+                    response.json()
+                        .then(function(finalData) {
+                            console.log(finalData);
+                        })
+                })           
+        }
+
+        // second way - async await
+
+        async function getAnimalData() {
+            const response = await fetch("https://fakerapi.it/api/v1/persons?_quantity=1&_gender=male&_birthday_start=2005-01-01");
+            const finalData = await response.json()
+            console.log(finalData);
+        }
+
+        // third way 
+
+        function getAnimalData() {
+            fetch("https://fakerapi.it/api/v1/persons?_quantity=1&_gender=male&_birthday_start=2005-01-01")
+                .then(async function(response) {
+                    const jsonData = await response.json();
+                    document.getElementById("container").innerHTML = JSON.stringify(jsonData.data);
+                })
+        }
+    </script>
+    <button onclick="getAnimalData()">Get animal data</button>
+
+</body>
+</html>
