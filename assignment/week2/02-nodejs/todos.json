@@ -1,12 +1,1 @@
-[
-    {
-        "id" : 1,
-        "title" : "buy a book",
-        "description": "go to store and buy book"
-    }, 
-    {
-        "id" : 2,
-        "title" : "read a book",
-        "description": "finished reading"  
-    }
-]
+[{"id":1,"title":"buy a book","description":"go to store and buy book"},{"id":2,"title":"read a book","description":"finished reading"},{"id":989395,"title":"New Todo","description":"A new todo item"}]
