@@ -3,7 +3,7 @@
 ### Description
 You need to implement a course selling app. Make sure you setup your own mongodb instance before starting. 
 
-url - > (mongodb+srv://vaishali86c:Vaishali8c@cluster0.qfzpq6t.mongodb.net/)
+url - > (mongodb+srv://vaishali86c:Vaishali86c@cluster0.qfzpq6t.mongodb.net/)
 
 It needs to support two types of users - 
 1. Admins
