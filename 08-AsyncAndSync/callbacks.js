@@ -1,3 +1,5 @@
+//callbacks is called as function call in another functions 
+
 function sqr(n) {
     return n * n;
 }

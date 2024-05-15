@@ -24,7 +24,6 @@ app.get("/ride1", isOldEnoughMiddleware, function(req, res) {
 })
 
 app.get("/ride2", isOldEnoughMiddleware, function(req, res) {
-    
     res.json({
         msgs: "You have successfully riden the ride 2"
     })
